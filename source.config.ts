@@ -103,6 +103,9 @@ export const examples = defineDocs({
 export default defineConfig({
   mdxOptions: {
     remarkPlugins: [remarkMdxMermaid],
+    remarkImageOptions: {
+      external: false,
+    },
   },
   plugins: [lastModified()],
 });
